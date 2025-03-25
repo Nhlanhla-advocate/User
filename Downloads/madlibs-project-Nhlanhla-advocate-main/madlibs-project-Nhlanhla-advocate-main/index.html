@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap" rel="stylesheet">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Smite-Battle of the gods</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+  </head>
+  <body>
+     <!-- VIDEO -->
+    <div class="background-video">
+      <video id="background-video" autoplay loop>
+        <source src="./media/SMITE Gameplay trailer.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- HEADING CLASS CLASS -->
+    <div class="heading">
+      <h1 id="Mad-libs">Smite-Battle Of The Gods</h1>
+      <h2 id="first-heading">Dive into the battlefield to steer the gods into victory</h2>
+    </div>
+
+    <!-- MADLIBS EDIT CLASS -->
+    <div class="flex-container">
+      
+      <div class="madLibsEdit" id="madLibsEdit">
+      <h3 id="edit">Go into a killing spree</h3>
+      </div>
+
+      <!-- MADLIBS PREVIEW CLASS -->
+      <div class="flex-container"></div>
+      <div class="madLibsPreview">
+      <h3 id="preview">Attack!</h3>
+      </div>
+    </div>
+
+    <!-- BUTTON CLASS AND ID's -->
+    <div class="Buttons">
+      <button class="reset">Reset</button>
+      <button class="play">Play</button>
+      <button class="stop">Stop</button>
+    </div>
+    <div class="translate" id="goodleTranslate">
+      <div id="google_translate_element"></div>
+    </div>
+  </div>
+    <!-- SCRIPT -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+    </script>
+    <script src="madlibs.js"></script>
+  </body>
+</html>

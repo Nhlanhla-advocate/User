@@ -1,0 +1,112 @@
+/**
+ * Your CSS goes here.
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+
+ /* COLORS PALLETS*/
+    --primary-color: #000e40;
+    --secondary-color: #ffce00;
+    --grey-color: #404040;
+    --blue-color: #335183;
+    --brown-color: #b89500; 
+    
+}
+    /* BODY */
+  body,html {
+    overflow: hidden;
+    font-family: 'Penumbra Half Serif';
+    margin: 0;
+    padding: 0;
+  }
+
+    /* BACKGROUND VIDEO 1 */
+  #background-video {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+
+  }
+  /* BACKGROUND VIDEO 2 */
+  .background-video{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+    /* FONTS */
+   @font-face {
+    font-family: 'Penumbra Half Serif';
+    src: url('fonts/PenumbraHalfSerif.woff2') format('woff2'),
+         url('fonts/PenumbraHalfSerif.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+   /* HEADING */
+  .heading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #b89500;
+    
+
+  }
+  
+  /* FLEX-CONTAINER */
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+   
+  }
+  
+  /* MADLIBS */
+  .madLibsEdit,
+  .madLibsPreview {
+    width: 45%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    color: #b89500;
+  }
+  
+  /* INPUT */
+  input[type="text"] {
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Penumbra Half Serif', Arial, sans-serif;
+    font-weight: bold;
+    font-style: var(--brown-color);
+  }
+  
+  .Buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .Buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-family: 'Penumbra Half Serif', Arial, sans-serif;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #b89500;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Buttons button:hover {
+    background-color: #555;
+  }
+  
